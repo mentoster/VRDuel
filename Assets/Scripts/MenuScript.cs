@@ -16,6 +16,8 @@ public class MenuScript : MonoBehaviour
     [SerializeField] private int medium=2;
     [SerializeField] private int hard=3;
     [SerializeField] private Text Difficulty;
+    public Text scoreText;
+    private int scoreCounter = 0;
 
     private int BotsCount;
     [SerializeField] private List<GameObject> Bots;
@@ -127,5 +129,11 @@ public class MenuScript : MonoBehaviour
     {
         difficulty = 2;
         Debug.Log("Выбранна сложная сложность");
+    }
+
+    public void Score(int addScore)
+    {
+        scoreCounter += addScore;
+        scoreText.text = scoreCounter.ToString();
     }
 }

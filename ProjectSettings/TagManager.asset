@@ -16,6 +16,10 @@ TagManager:
   - Glass
   - Decal
   - Bottle
+  - Bounce
+  - Dog
+  - TargetTrigger
+  - CircleTarget
   layers:
   - Default
   - TransparentFX

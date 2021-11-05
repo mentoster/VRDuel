@@ -38,6 +38,7 @@ namespace Valve.VR.InteractionSystem
 		private GameObject scaleParentObject = null;
 
 
+
 		//-------------------------------------------------
 		void Start()
 		{
@@ -57,7 +58,6 @@ namespace Valve.VR.InteractionSystem
 				travelledFrames++;
 			}
 		}
-
 
 		//-------------------------------------------------
 		public void ArrowReleased( float inputVelocity )

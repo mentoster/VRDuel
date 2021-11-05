@@ -73,6 +73,9 @@ public class GameControl : MonoBehaviour
             case 3:
                 Weapon.text = "- Luger";
                 break;
+            case 4:
+                Weapon.text = "- Bow";
+                break;
         }
         switch (currentLocation)
         {

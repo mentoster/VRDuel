@@ -144,9 +144,10 @@ GameObject:
   - component: {fileID: 2749849985079200607}
   - component: {fileID: 129930062422261653}
   - component: {fileID: 1931312807865556545}
+  - component: {fileID: 5254843220424976431}
   m_Layer: 0
   m_Name: Ashtray_ForPlayer
-  m_TagString: Untagged
+  m_TagString: Bounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -231,3 +232,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5254843220424976431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931312807865556544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec7979e756177044b108777f5e0a5e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
