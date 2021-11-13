@@ -17,7 +17,10 @@ public class Explosion : MonoBehaviour
             gameObject.GetComponent<MeshRenderer>().enabled = false;
 
         if (gameObject.tag == "Dog")
+        {
             gameObject.GetComponent<SkinnedMeshRenderer>().enabled = false;
+            GetComponent<Moving>().enabled = false;
+        }
 
         gameObject.GetComponent<BoxCollider>().enabled = false;
         brokenMesh.SetActive(true);
