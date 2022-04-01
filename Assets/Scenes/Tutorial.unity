@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 81f714daf7144784b8a2f42f1cd30927, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 79.06078, g: 83.17908, b: 96.591774, a: 1}
+  m_IndirectSpecularColor: {r: 0.031139024, g: 0.032063797, b: 0.043122336, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -72,7 +72,7 @@ LightmapSettings:
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
-    m_BakeBackend: 1
+    m_BakeBackend: 2
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
@@ -97,8 +97,9 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingDataAsset: {fileID: 112000000, guid: 2261d1d8eff4ac7439cd733a765c6418,
+    type: 2}
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -278,6 +279,70 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &21446124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 21446125}
+  - component: {fileID: 21446126}
+  m_Layer: 0
+  m_Name: Reflection Probe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &21446125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21446124}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.659999, y: 3.2651432, z: -2.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 165465975}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &21446126
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21446124}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 64.24785, y: 15.099316, z: 51.2351}
+  m_BoxOffset: {x: 27.123922, y: 3.5730128, z: 3.4809647}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
 --- !u!1 &38808010
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 546253291048564575, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -810,6 +880,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -1386,6 +1461,8 @@ Transform:
   m_Children:
   - {fileID: 1832781484}
   - {fileID: 2011401411}
+  - {fileID: 21446125}
+  - {fileID: 1500763555}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1730,6 +1807,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &185941631 stripped
@@ -1810,6 +1892,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &218706206 stripped
@@ -1889,6 +1976,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -1999,6 +2091,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -2154,6 +2251,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &309071352 stripped
@@ -2308,6 +2410,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &385612350 stripped
@@ -2394,6 +2501,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &392913188 stripped
@@ -2474,6 +2586,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &414998524 stripped
@@ -2553,6 +2670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -2692,6 +2814,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -2938,6 +3065,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &537715653 stripped
@@ -2946,107 +3078,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 537715652}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &559834195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  rotation:
-    m_OverrideState: 0
-    m_Value: 179
-    min: 0
-    max: 360
-  skyIntensityMode:
-    m_OverrideState: 0
-    m_Value: 0
-  exposure:
-    m_OverrideState: 0
-    m_Value: 9
-  multiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxValue:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxColor:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0, z: 0}
-  desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
-  updateMode:
-    m_OverrideState: 0
-    m_Value: 0
-  updatePeriod:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  includeSunInBaking:
-    m_OverrideState: 0
-    m_Value: 0
-  hdriSky:
-    m_OverrideState: 0
-    m_Value: {fileID: 8900000, guid: 56c1cebf93b7adc4d9deba54109837fd, type: 3}
-  enableBackplate:
-    m_OverrideState: 0
-    m_Value: 0
-  backplateType:
-    m_OverrideState: 0
-    m_Value: 0
-  groundLevel:
-    m_OverrideState: 0
-    m_Value: 0
-  scale:
-    m_OverrideState: 0
-    m_Value: {x: 32, y: 32}
-  projectionDistance:
-    m_OverrideState: 0
-    m_Value: 16
-    min: 0.0000001
-  plateRotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  plateTexRotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  plateTexOffset:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0}
-  blendAmount:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 100
-  shadowTint:
-    m_OverrideState: 0
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    hdr: 0
-    showAlpha: 1
-    showEyeDropper: 1
-  pointLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
-  dirLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
-  rectLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
 --- !u!1 &563354327
 GameObject:
   m_ObjectHideFlags: 0
@@ -3466,6 +3497,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &603132103 stripped
@@ -3687,6 +3723,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 546253291048564575, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -4078,7 +4119,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1.8559e-41, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -4343,6 +4384,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -4633,6 +4679,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &824206691 stripped
@@ -4761,6 +4812,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &876887331 stripped
@@ -4886,6 +4942,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 546253291048564575, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
     - {fileID: 8127072211770002609, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -4967,6 +5028,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -5244,6 +5310,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &943625775 stripped
@@ -5339,6 +5410,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 546253291048564575, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
     - {fileID: 8127072211770002609, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -5420,6 +5496,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -5593,6 +5674,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 546253291048564575, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
     - {fileID: 8127072211770002609, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -5674,6 +5760,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -5764,6 +5855,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 546253291048564575, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
     - {fileID: 8127072211770002609, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -5845,6 +5941,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -5941,6 +6042,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &1036434668 stripped
@@ -6036,6 +6142,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &1050228874 stripped
@@ -6115,6 +6226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -6210,6 +6326,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -6352,6 +6473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -6510,6 +6636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -7060,6 +7191,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &1342159462 stripped
@@ -7544,6 +7680,431 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04733553150bd09419e330d2393d03fa, type: 3}
+--- !u!1 &1500763554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1500763555}
+  - component: {fileID: 1500763556}
+  m_Layer: 0
+  m_Name: Light Probe Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1500763555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500763554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.49, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 165465975}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!220 &1500763556
+LightProbeGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500763554}
+  m_Enabled: 1
+  m_SourcePositions:
+  - {x: -2.6780689, y: 1, z: -0.7026778}
+  - {x: -2.6780689, y: 1, z: -2.7026777}
+  - {x: -2.6780689, y: -1, z: -0.7026778}
+  - {x: -2.6780689, y: -1, z: -2.7026777}
+  - {x: -4.6780686, y: 1, z: -0.7026778}
+  - {x: -4.6780686, y: 1, z: -2.7026777}
+  - {x: -4.6780686, y: -1, z: -0.7026778}
+  - {x: -4.6780686, y: -1, z: -2.7026777}
+  - {x: -7.3191056, y: 1, z: -0.7016775}
+  - {x: -7.3191056, y: 1, z: -2.701677}
+  - {x: -7.3191056, y: -1.0000001, z: -0.7016775}
+  - {x: -7.3191056, y: -1, z: -2.701677}
+  - {x: -9.319105, y: 1, z: -0.7016775}
+  - {x: -9.319105, y: 1, z: -2.701677}
+  - {x: -9.319105, y: -1.0000001, z: -0.7016775}
+  - {x: -9.319105, y: -1, z: -2.701677}
+  - {x: -2.803748, y: 1, z: 3.3043425}
+  - {x: -2.803748, y: 1, z: 1.304343}
+  - {x: -2.803748, y: -1.0000001, z: 3.3043425}
+  - {x: -2.803748, y: -1, z: 1.304343}
+  - {x: -4.8037467, y: 1, z: 3.3043425}
+  - {x: -4.8037467, y: 1, z: 1.304343}
+  - {x: -4.8037467, y: -1.0000001, z: 3.3043425}
+  - {x: -4.8037467, y: -1, z: 1.304343}
+  - {x: -7.4447846, y: 1, z: 3.305343}
+  - {x: -7.4447856, y: 0.99999976, z: 1.3053434}
+  - {x: -7.4447846, y: -1.0000001, z: 3.305343}
+  - {x: -7.4447856, y: -1, z: 1.3053434}
+  - {x: -9.44478, y: 1, z: 3.305343}
+  - {x: -9.44478, y: 0.99999976, z: 1.3053434}
+  - {x: -9.44478, y: -1.0000002, z: 3.305343}
+  - {x: -9.44478, y: -1.0000001, z: 1.3053439}
+  - {x: -2.552773, y: 0.9999995, z: -8.469424}
+  - {x: -2.552773, y: 0.9999995, z: -10.469423}
+  - {x: -2.552773, y: -1.0000006, z: -8.469423}
+  - {x: -2.552773, y: -1.0000005, z: -10.469423}
+  - {x: -4.552773, y: 0.9999995, z: -8.469424}
+  - {x: -4.552773, y: 0.9999995, z: -10.469423}
+  - {x: -4.552773, y: -1.0000006, z: -8.469424}
+  - {x: -4.552773, y: -1.0000005, z: -10.469423}
+  - {x: -7.19381, y: 0.9999995, z: -8.468424}
+  - {x: -7.193811, y: 0.9999993, z: -10.468422}
+  - {x: -7.19381, y: -1.0000006, z: -8.468424}
+  - {x: -7.193811, y: -1.0000005, z: -10.468422}
+  - {x: -9.193808, y: 0.9999995, z: -8.468424}
+  - {x: -9.193806, y: 0.9999993, z: -10.468422}
+  - {x: -9.193808, y: -1.0000007, z: -8.468424}
+  - {x: -9.193806, y: -1.0000006, z: -10.468422}
+  - {x: -2.6784518, y: 0.9999995, z: -4.4624047}
+  - {x: -2.6784513, y: 0.9999995, z: -6.4624047}
+  - {x: -2.6784518, y: -1.0000007, z: -4.4624047}
+  - {x: -2.6784513, y: -1.0000005, z: -6.4624047}
+  - {x: -4.678451, y: 0.9999995, z: -4.462404}
+  - {x: -4.678451, y: 0.9999995, z: -6.462404}
+  - {x: -4.678451, y: -1.0000006, z: -4.462404}
+  - {x: -4.678451, y: -1.0000005, z: -6.4624047}
+  - {x: -7.319488, y: 0.9999995, z: -4.4614043}
+  - {x: -7.319488, y: 0.99999905, z: -6.4614034}
+  - {x: -7.319488, y: -1.0000006, z: -4.4614043}
+  - {x: -7.319488, y: -1.0000005, z: -6.4614043}
+  - {x: -9.319483, y: 0.9999995, z: -4.4614043}
+  - {x: -9.319483, y: 0.99999905, z: -6.4614034}
+  - {x: -9.319483, y: -1.0000008, z: -4.4614043}
+  - {x: -9.319483, y: -1.0000006, z: -6.4614034}
+  - {x: 6.732374, y: 1, z: -0.70267755}
+  - {x: 6.732374, y: 0.99999976, z: -2.7026782}
+  - {x: 6.732374, y: -1, z: -0.7026774}
+  - {x: 6.732374, y: -1.0000001, z: -2.7026782}
+  - {x: 4.7323756, y: 1, z: -0.70267755}
+  - {x: 4.7323756, y: 0.99999976, z: -2.7026782}
+  - {x: 4.7323756, y: -1, z: -0.7026774}
+  - {x: 4.7323756, y: -1.0000001, z: -2.7026782}
+  - {x: 2.091338, y: 1, z: -0.70167756}
+  - {x: 2.091338, y: 0.99999976, z: -2.7016768}
+  - {x: 2.091338, y: -1.0000002, z: -0.70167744}
+  - {x: 2.091338, y: -1.0000001, z: -2.7016768}
+  - {x: 0.091338396, y: 1, z: -0.70167756}
+  - {x: 0.091338396, y: 0.99999976, z: -2.7016768}
+  - {x: 0.091338396, y: -1.0000002, z: -0.70167744}
+  - {x: 0.091338396, y: -1.0000001, z: -2.7016768}
+  - {x: 6.606695, y: 1, z: 3.3043423}
+  - {x: 6.606695, y: 1, z: 1.3043429}
+  - {x: 6.606695, y: -1.0000002, z: 3.3043423}
+  - {x: 6.606695, y: -1.0000001, z: 1.304343}
+  - {x: 4.6066966, y: 1, z: 3.3043423}
+  - {x: 4.6066966, y: 1, z: 1.3043429}
+  - {x: 4.6066966, y: -1.0000002, z: 3.3043423}
+  - {x: 4.6066966, y: -1.0000001, z: 1.304343}
+  - {x: 1.9656589, y: 1, z: 3.305343}
+  - {x: 1.965658, y: 0.9999995, z: 1.3053436}
+  - {x: 1.9656589, y: -1.0000002, z: 3.305343}
+  - {x: 1.965658, y: -1.0000001, z: 1.305343}
+  - {x: -0.03433776, y: 1, z: 3.305343}
+  - {x: -0.03433776, y: 0.9999995, z: 1.3053436}
+  - {x: -0.03433776, y: -1.0000004, z: 3.305343}
+  - {x: -0.03433776, y: -1.0000001, z: 1.3053436}
+  - {x: 6.85767, y: 0.9999995, z: -8.469423}
+  - {x: 6.85767, y: 0.9999993, z: -10.469423}
+  - {x: 6.85767, y: -1.0000007, z: -8.469422}
+  - {x: 6.85767, y: -1.0000006, z: -10.469423}
+  - {x: 4.8576703, y: 0.9999995, z: -8.469423}
+  - {x: 4.8576703, y: 0.9999993, z: -10.469423}
+  - {x: 4.8576703, y: -1.0000007, z: -8.469423}
+  - {x: 4.8576703, y: -1.0000006, z: -10.469423}
+  - {x: 2.2166336, y: 0.9999995, z: -8.468424}
+  - {x: 2.2166326, y: 0.99999905, z: -10.46842}
+  - {x: 2.2166336, y: -1.0000007, z: -8.468424}
+  - {x: 2.2166326, y: -1.0000006, z: -10.46842}
+  - {x: 0.21663594, y: 0.9999995, z: -8.468424}
+  - {x: 0.21663785, y: 0.99999905, z: -10.46842}
+  - {x: 0.21663594, y: -1.0000008, z: -8.468424}
+  - {x: 0.21663785, y: -1.0000006, z: -10.46842}
+  - {x: 6.7319913, y: 0.9999993, z: -4.4624047}
+  - {x: 6.7319913, y: 0.9999995, z: -6.462404}
+  - {x: 6.7319913, y: -1.0000007, z: -4.4624047}
+  - {x: 6.7319913, y: -1.0000005, z: -6.462404}
+  - {x: 4.7319927, y: 0.9999993, z: -4.4624033}
+  - {x: 4.7319927, y: 0.9999995, z: -6.462403}
+  - {x: 4.7319927, y: -1.0000007, z: -4.4624033}
+  - {x: 4.7319927, y: -1.0000005, z: -6.462404}
+  - {x: 2.0909555, y: 0.9999993, z: -4.4614034}
+  - {x: 2.0909555, y: 0.9999988, z: -6.4614024}
+  - {x: 2.0909555, y: -1.0000007, z: -4.4614034}
+  - {x: 2.0909555, y: -1.0000005, z: -6.461404}
+  - {x: 0.09096074, y: 0.9999993, z: -4.4614034}
+  - {x: 0.09096074, y: 0.9999988, z: -6.4614024}
+  - {x: 0.09096074, y: -1.0000008, z: -4.4614034}
+  - {x: 0.09096074, y: -1.0000006, z: -6.4614024}
+  - {x: 16.162086, y: 1, z: -0.70267755}
+  - {x: 16.162086, y: 0.99999976, z: -2.7026782}
+  - {x: 16.162086, y: -1, z: -0.7026774}
+  - {x: 16.162086, y: -1.0000002, z: -2.7026782}
+  - {x: 14.162088, y: 1, z: -0.70267755}
+  - {x: 14.162088, y: 0.99999976, z: -2.7026782}
+  - {x: 14.162088, y: -1, z: -0.7026774}
+  - {x: 14.162088, y: -1.0000002, z: -2.7026782}
+  - {x: 11.521051, y: 1, z: -0.70167756}
+  - {x: 11.521051, y: 0.99999976, z: -2.7016768}
+  - {x: 11.521051, y: -1.0000002, z: -0.70167744}
+  - {x: 11.521051, y: -1.0000002, z: -2.7016768}
+  - {x: 9.521051, y: 1, z: -0.70167756}
+  - {x: 9.521051, y: 0.99999976, z: -2.7016768}
+  - {x: 9.521051, y: -1.0000002, z: -0.70167744}
+  - {x: 9.521051, y: -1.0000002, z: -2.7016768}
+  - {x: 16.036407, y: 1, z: 3.3043416}
+  - {x: 16.036407, y: 1, z: 1.3043429}
+  - {x: 16.036407, y: -1.0000004, z: 3.3043416}
+  - {x: 16.036407, y: -1.0000001, z: 1.304343}
+  - {x: 14.036408, y: 1, z: 3.3043416}
+  - {x: 14.036408, y: 1, z: 1.3043429}
+  - {x: 14.036408, y: -1.0000004, z: 3.3043416}
+  - {x: 14.036408, y: -1.0000001, z: 1.304343}
+  - {x: 11.395371, y: 1, z: 3.305343}
+  - {x: 11.3953705, y: 0.9999993, z: 1.3053436}
+  - {x: 11.395371, y: -1.0000004, z: 3.305343}
+  - {x: 11.3953705, y: -1.0000001, z: 1.305343}
+  - {x: 9.395375, y: 1, z: 3.305343}
+  - {x: 9.395375, y: 0.9999993, z: 1.3053436}
+  - {x: 9.395375, y: -1.0000004, z: 3.305343}
+  - {x: 9.395375, y: -1.0000001, z: 1.3053436}
+  - {x: 16.287382, y: 0.9999995, z: -8.469422}
+  - {x: 16.287382, y: 0.99999905, z: -10.469423}
+  - {x: 16.287382, y: -1.0000008, z: -8.469421}
+  - {x: 16.287382, y: -1.0000006, z: -10.469423}
+  - {x: 14.287382, y: 0.9999995, z: -8.469422}
+  - {x: 14.287382, y: 0.99999905, z: -10.469423}
+  - {x: 14.287382, y: -1.0000008, z: -8.469422}
+  - {x: 14.287382, y: -1.0000006, z: -10.469423}
+  - {x: 11.646346, y: 0.9999995, z: -8.468424}
+  - {x: 11.646345, y: 0.9999988, z: -10.468419}
+  - {x: 11.646346, y: -1.0000008, z: -8.468424}
+  - {x: 11.646345, y: -1.0000006, z: -10.468419}
+  - {x: 9.646348, y: 0.9999995, z: -8.468424}
+  - {x: 9.646351, y: 0.9999988, z: -10.468419}
+  - {x: 9.646348, y: -1.0000008, z: -8.468424}
+  - {x: 9.646351, y: -1.0000006, z: -10.468419}
+  - {x: 16.161703, y: 0.99999905, z: -4.4624047}
+  - {x: 16.161703, y: 0.9999995, z: -6.462403}
+  - {x: 16.161703, y: -1.0000007, z: -4.4624047}
+  - {x: 16.161703, y: -1.0000005, z: -6.462403}
+  - {x: 14.161706, y: 0.99999905, z: -4.4624033}
+  - {x: 14.161706, y: 0.9999995, z: -6.462403}
+  - {x: 14.161706, y: -1.0000007, z: -4.4624033}
+  - {x: 14.161706, y: -1.0000005, z: -6.462403}
+  - {x: 11.520668, y: 0.99999905, z: -4.4614034}
+  - {x: 11.520668, y: 0.9999988, z: -6.4614024}
+  - {x: 11.520668, y: -1.0000007, z: -4.4614034}
+  - {x: 11.520668, y: -1.0000005, z: -6.4614024}
+  - {x: 9.520673, y: 0.99999905, z: -4.4614034}
+  - {x: 9.520673, y: 0.9999988, z: -6.4614024}
+  - {x: 9.520673, y: -1.0000008, z: -4.4614034}
+  - {x: 9.520673, y: -1.0000006, z: -6.4614024}
+  - {x: -2.6780686, y: 1, z: -0.70267755}
+  - {x: -2.6780686, y: 0.99999976, z: -2.7026782}
+  - {x: -2.6780686, y: -1, z: -0.7026774}
+  - {x: -2.6780686, y: -1.0000001, z: -2.7026782}
+  - {x: -4.6780677, y: 1, z: -0.70267755}
+  - {x: -4.6780677, y: 0.99999976, z: -2.7026782}
+  - {x: -4.6780677, y: -1, z: -0.7026774}
+  - {x: -4.6780677, y: -1.0000001, z: -2.7026782}
+  - {x: -7.319105, y: 1, z: -0.70167756}
+  - {x: -7.319105, y: 0.99999976, z: -2.7016768}
+  - {x: -7.319105, y: -1.0000002, z: -0.70167744}
+  - {x: -7.319105, y: -1.0000001, z: -2.7016768}
+  - {x: -9.319104, y: 1, z: -0.70167756}
+  - {x: -9.319104, y: 0.99999976, z: -2.7016768}
+  - {x: -9.319104, y: -1.0000002, z: -0.70167744}
+  - {x: -9.319104, y: -1.0000001, z: -2.7016768}
+  - {x: -2.803748, y: 1, z: 3.3043423}
+  - {x: -2.803748, y: 1, z: 1.3043429}
+  - {x: -2.803748, y: -1.0000002, z: 3.3043423}
+  - {x: -2.803748, y: -1.0000001, z: 1.304343}
+  - {x: -4.8037467, y: 1, z: 3.3043423}
+  - {x: -4.8037467, y: 1, z: 1.3043429}
+  - {x: -4.8037467, y: -1.0000002, z: 3.3043423}
+  - {x: -4.8037467, y: -1.0000001, z: 1.304343}
+  - {x: -7.4447837, y: 1, z: 3.305343}
+  - {x: -7.444785, y: 0.9999995, z: 1.3053436}
+  - {x: -7.4447837, y: -1.0000002, z: 3.305343}
+  - {x: -7.444785, y: -1.0000001, z: 1.305343}
+  - {x: -9.444779, y: 1, z: 3.305343}
+  - {x: -9.444779, y: 0.9999995, z: 1.3053436}
+  - {x: -9.444779, y: -1.0000004, z: 3.305343}
+  - {x: -9.444779, y: -1.0000001, z: 1.3053436}
+  - {x: -2.5527728, y: 0.9999995, z: -8.469423}
+  - {x: -2.5527728, y: 0.9999993, z: -10.469423}
+  - {x: -2.5527728, y: -1.0000007, z: -8.469422}
+  - {x: -2.5527728, y: -1.0000006, z: -10.469423}
+  - {x: -4.552773, y: 0.9999995, z: -8.469423}
+  - {x: -4.552773, y: 0.9999993, z: -10.469423}
+  - {x: -4.552773, y: -1.0000007, z: -8.469423}
+  - {x: -4.552773, y: -1.0000006, z: -10.469423}
+  - {x: -7.1938095, y: 0.9999995, z: -8.468424}
+  - {x: -7.19381, y: 0.99999905, z: -10.46842}
+  - {x: -7.1938095, y: -1.0000007, z: -8.468424}
+  - {x: -7.19381, y: -1.0000006, z: -10.46842}
+  - {x: -9.193807, y: 0.9999995, z: -8.468424}
+  - {x: -9.193805, y: 0.99999905, z: -10.46842}
+  - {x: -9.193807, y: -1.0000008, z: -8.468424}
+  - {x: -9.193805, y: -1.0000006, z: -10.46842}
+  - {x: -2.6784513, y: 0.9999993, z: -4.4624047}
+  - {x: -2.6784513, y: 0.9999995, z: -6.462404}
+  - {x: -2.6784513, y: -1.0000007, z: -4.4624047}
+  - {x: -2.6784513, y: -1.0000005, z: -6.462404}
+  - {x: -4.6784506, y: 0.9999993, z: -4.4624033}
+  - {x: -4.6784506, y: 0.9999995, z: -6.462403}
+  - {x: -4.6784506, y: -1.0000007, z: -4.4624033}
+  - {x: -4.6784506, y: -1.0000005, z: -6.462404}
+  - {x: -7.3194876, y: 0.9999993, z: -4.4614034}
+  - {x: -7.3194876, y: 0.9999988, z: -6.4614024}
+  - {x: -7.3194876, y: -1.0000007, z: -4.4614034}
+  - {x: -7.3194876, y: -1.0000005, z: -6.461404}
+  - {x: -9.319482, y: 0.9999993, z: -4.4614034}
+  - {x: -9.319482, y: 0.9999988, z: -6.4614024}
+  - {x: -9.319482, y: -1.0000008, z: -4.4614034}
+  - {x: -9.319482, y: -1.0000006, z: -6.4614024}
+  - {x: 6.7323737, y: 1, z: -0.70267755}
+  - {x: 6.7323737, y: 0.99999976, z: -2.7026782}
+  - {x: 6.7323737, y: -1, z: -0.7026774}
+  - {x: 6.7323737, y: -1.0000002, z: -2.7026782}
+  - {x: 4.7323756, y: 1, z: -0.70267755}
+  - {x: 4.7323756, y: 0.99999976, z: -2.7026782}
+  - {x: 4.7323756, y: -1, z: -0.7026774}
+  - {x: 4.7323756, y: -1.0000002, z: -2.7026782}
+  - {x: 2.0913382, y: 1, z: -0.70167756}
+  - {x: 2.0913382, y: 0.99999976, z: -2.7016768}
+  - {x: 2.0913382, y: -1.0000002, z: -0.70167744}
+  - {x: 2.0913382, y: -1.0000002, z: -2.7016768}
+  - {x: 0.091338836, y: 1, z: -0.70167756}
+  - {x: 0.091338836, y: 0.99999976, z: -2.7016768}
+  - {x: 0.091338836, y: -1.0000002, z: -0.70167744}
+  - {x: 0.091338836, y: -1.0000002, z: -2.7016768}
+  - {x: 6.606694, y: 1, z: 3.3043416}
+  - {x: 6.606694, y: 1, z: 1.3043429}
+  - {x: 6.606694, y: -1.0000004, z: 3.3043416}
+  - {x: 6.606694, y: -1.0000001, z: 1.304343}
+  - {x: 4.606696, y: 1, z: 3.3043416}
+  - {x: 4.606696, y: 1, z: 1.3043429}
+  - {x: 4.606696, y: -1.0000004, z: 3.3043416}
+  - {x: 4.606696, y: -1.0000001, z: 1.304343}
+  - {x: 1.9656589, y: 1, z: 3.305343}
+  - {x: 1.9656575, y: 0.9999993, z: 1.3053436}
+  - {x: 1.9656589, y: -1.0000004, z: 3.305343}
+  - {x: 1.9656575, y: -1.0000001, z: 1.305343}
+  - {x: -0.03433772, y: 1, z: 3.305343}
+  - {x: -0.03433772, y: 0.9999993, z: 1.3053436}
+  - {x: -0.03433772, y: -1.0000004, z: 3.305343}
+  - {x: -0.03433772, y: -1.0000001, z: 1.3053436}
+  - {x: 6.8576684, y: 0.9999995, z: -8.469422}
+  - {x: 6.8576684, y: 0.99999905, z: -10.469423}
+  - {x: 6.8576684, y: -1.0000008, z: -8.469421}
+  - {x: 6.8576684, y: -1.0000006, z: -10.469423}
+  - {x: 4.8576694, y: 0.9999995, z: -8.469422}
+  - {x: 4.8576694, y: 0.99999905, z: -10.469423}
+  - {x: 4.8576694, y: -1.0000008, z: -8.469422}
+  - {x: 4.8576694, y: -1.0000006, z: -10.469423}
+  - {x: 2.2166333, y: 0.9999995, z: -8.468424}
+  - {x: 2.216632, y: 0.9999988, z: -10.468419}
+  - {x: 2.2166333, y: -1.0000008, z: -8.468424}
+  - {x: 2.216632, y: -1.0000006, z: -10.468419}
+  - {x: 0.21663529, y: 0.9999995, z: -8.468424}
+  - {x: 0.21663801, y: 0.9999988, z: -10.468419}
+  - {x: 0.21663529, y: -1.0000008, z: -8.468424}
+  - {x: 0.21663801, y: -1.0000006, z: -10.468419}
+  - {x: 6.731991, y: 0.99999905, z: -4.4624047}
+  - {x: 6.731991, y: 0.9999995, z: -6.462403}
+  - {x: 6.731991, y: -1.0000007, z: -4.4624047}
+  - {x: 6.731991, y: -1.0000005, z: -6.462403}
+  - {x: 4.7319927, y: 0.99999905, z: -4.4624033}
+  - {x: 4.7319927, y: 0.9999995, z: -6.462403}
+  - {x: 4.7319927, y: -1.0000007, z: -4.4624033}
+  - {x: 4.7319927, y: -1.0000005, z: -6.462403}
+  - {x: 2.0909553, y: 0.99999905, z: -4.4614034}
+  - {x: 2.0909553, y: 0.9999988, z: -6.4614024}
+  - {x: 2.0909553, y: -1.0000007, z: -4.4614034}
+  - {x: 2.0909553, y: -1.0000005, z: -6.4614024}
+  - {x: 0.090960085, y: 0.99999905, z: -4.4614034}
+  - {x: 0.090960085, y: 0.9999988, z: -6.4614024}
+  - {x: 0.090960085, y: -1.0000008, z: -4.4614034}
+  - {x: 0.090960085, y: -1.0000006, z: -6.4614024}
+  - {x: 16.162085, y: 1, z: -0.70267755}
+  - {x: 16.162085, y: 0.99999976, z: -2.7026782}
+  - {x: 16.162085, y: -1, z: -0.7026774}
+  - {x: 16.162085, y: -1.0000002, z: -2.7026782}
+  - {x: 14.162088, y: 1, z: -0.70267755}
+  - {x: 14.162088, y: 0.99999976, z: -2.7026782}
+  - {x: 14.162088, y: -1, z: -0.7026774}
+  - {x: 14.162088, y: -1.0000002, z: -2.7026782}
+  - {x: 11.521049, y: 1, z: -0.70167756}
+  - {x: 11.521049, y: 0.99999976, z: -2.7016768}
+  - {x: 11.521049, y: -1.0000002, z: -0.70167744}
+  - {x: 11.521049, y: -1.0000002, z: -2.7016768}
+  - {x: 9.52105, y: 1, z: -0.70167756}
+  - {x: 9.52105, y: 0.99999976, z: -2.7016768}
+  - {x: 9.52105, y: -1.0000002, z: -0.70167744}
+  - {x: 9.52105, y: -1.0000002, z: -2.7016768}
+  - {x: 16.036407, y: 1, z: 3.3043416}
+  - {x: 16.036407, y: 1, z: 1.3043429}
+  - {x: 16.036407, y: -1.0000004, z: 3.3043416}
+  - {x: 16.036407, y: -1.0000001, z: 1.304343}
+  - {x: 14.036408, y: 1, z: 3.3043416}
+  - {x: 14.036408, y: 1, z: 1.3043429}
+  - {x: 14.036408, y: -1.0000004, z: 3.3043416}
+  - {x: 14.036408, y: -1.0000001, z: 1.304343}
+  - {x: 11.3953705, y: 1, z: 3.305343}
+  - {x: 11.3953705, y: 0.9999993, z: 1.3053436}
+  - {x: 11.3953705, y: -1.0000004, z: 3.305343}
+  - {x: 11.3953705, y: -1.0000001, z: 1.305343}
+  - {x: 9.395374, y: 1, z: 3.305343}
+  - {x: 9.395374, y: 0.9999993, z: 1.3053436}
+  - {x: 9.395374, y: -1.0000004, z: 3.305343}
+  - {x: 9.395374, y: -1.0000001, z: 1.3053436}
+  - {x: 16.287382, y: 0.9999995, z: -8.469421}
+  - {x: 16.287382, y: 0.9999988, z: -10.469423}
+  - {x: 16.287382, y: -1.0000008, z: -8.469421}
+  - {x: 16.287382, y: -1.0000006, z: -10.469423}
+  - {x: 14.287379, y: 0.9999995, z: -8.469421}
+  - {x: 14.287379, y: 0.9999988, z: -10.469423}
+  - {x: 14.287379, y: -1.0000008, z: -8.469421}
+  - {x: 14.287379, y: -1.0000006, z: -10.469423}
+  - {x: 11.646345, y: 0.9999995, z: -8.468424}
+  - {x: 11.646345, y: 0.9999988, z: -10.468417}
+  - {x: 11.646345, y: -1.0000008, z: -8.468424}
+  - {x: 11.646345, y: -1.0000006, z: -10.468417}
+  - {x: 9.646347, y: 0.9999995, z: -8.468424}
+  - {x: 9.646351, y: 0.9999988, z: -10.468417}
+  - {x: 9.646347, y: -1.0000008, z: -8.468424}
+  - {x: 9.646351, y: -1.0000006, z: -10.468417}
+  - {x: 16.161703, y: 0.99999905, z: -4.4624047}
+  - {x: 16.161703, y: 0.9999995, z: -6.462403}
+  - {x: 16.161703, y: -1.0000007, z: -4.4624047}
+  - {x: 16.161703, y: -1.0000005, z: -6.462403}
+  - {x: 14.161704, y: 0.99999905, z: -4.4624033}
+  - {x: 14.161704, y: 0.9999995, z: -6.462403}
+  - {x: 14.161704, y: -1.0000007, z: -4.4624033}
+  - {x: 14.161704, y: -1.0000005, z: -6.462403}
+  - {x: 11.520667, y: 0.99999905, z: -4.4614034}
+  - {x: 11.520667, y: 0.9999988, z: -6.4614024}
+  - {x: 11.520667, y: -1.0000007, z: -4.4614034}
+  - {x: 11.520667, y: -1.0000005, z: -6.4614024}
+  - {x: 9.520672, y: 0.99999905, z: -4.4614034}
+  - {x: 9.520672, y: 0.9999988, z: -6.4614024}
+  - {x: 9.520672, y: -1.0000008, z: -4.4614034}
+  - {x: 9.520672, y: -1.0000006, z: -6.4614024}
+  m_Dering: 1
 --- !u!1001 &1505552436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7615,6 +8176,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -7812,6 +8378,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 546253291048564575, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
     - {fileID: 8127072211770002609, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -7909,6 +8480,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &1620247806 stripped
@@ -7961,7 +8537,7 @@ GameObject:
   m_TagString: Decal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1640988400
 Transform:
@@ -8111,6 +8687,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -8817,6 +9398,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &1761267242 stripped
@@ -9070,6 +9656,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &1819948670 stripped
@@ -9095,7 +9686,7 @@ GameObject:
   m_TagString: Decal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1821290947
 Transform:
@@ -9478,7 +10069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: a123fc0ac58cb774e8592c925f167e7c, type: 2}
   m_StaticLightingSkyUniqueID: 1
-  m_SkySettings: {fileID: 559834195}
+  m_SkySettings: {fileID: 0}
   m_SkySettingsFromProfile: {fileID: -1658960478407648048, guid: a123fc0ac58cb774e8592c925f167e7c,
     type: 2}
 --- !u!4 &1954671155
@@ -9694,6 +10285,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &1976659816 stripped
@@ -9773,6 +10369,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -9858,6 +10459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -10222,6 +10828,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 546253291048564575, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
     - {fileID: 8127072211770002609, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -10303,6 +10914,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
@@ -10635,6 +11251,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Decal
       objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
 --- !u!4 &2136200065 stripped
@@ -10838,6 +11459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755120324088544764, guid: 81fa572ed734a084793c3f80c7cb5184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fa572ed734a084793c3f80c7cb5184, type: 3}
